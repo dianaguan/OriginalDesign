@@ -1,6 +1,9 @@
-// var spotX = 6;
-// var spotY = 6;
-// var numCircles = 0;
+int rColor = (int) (Math.random() * (255 - 0)) + 0;
+int gColor = (int) (Math.random() * (255 - 0)) + 0;
+int bColor = (int) (Math.random() * (255 - 0)) + 0;
+
+int fishX = 50;
+int fishY = 400;
 
 void setup()
 {
@@ -10,18 +13,18 @@ void setup()
 void draw()
 {
 	cat();
+	fishY = fishY + 1;
 }
 void cat()
 {
-	fill(0,0,0);
+	fill(rColor,gColor,bColor);
 	ellipse(mouseX,mouseY,50,50);
-	// var randomSize=random(0,50);
-    noStroke();
-    fill(random(255),random(255),random(255));
-    // ellipse(mouseX,mouseY,randomSize,randomSize);
-    // numCircles++;
 }
-
+void floatingFish()
+{
+	fill(rColor,gColor,bColor);
+	ellipse(fishX,fishY,30,30);
+}
 
 
 
