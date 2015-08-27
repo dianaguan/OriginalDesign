@@ -42,8 +42,9 @@ int cSize = 20;
 public void wallpaper(){
 	stroke(0,0,0);
 	noFill();
+	frameRate(30);
 	ellipse(400,250,cSize,cSize);
-	cSize = cSize + 5;
+	cSize = cSize + 10;
 
 	if(cSize==950)
 	{
