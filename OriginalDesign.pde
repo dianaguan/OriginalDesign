@@ -7,8 +7,7 @@ void setup()
 void draw()
 {
 	bubbles();
-	//notSoCoolCircle();
-	//wallpaper();
+	wallpaper();
 }
 
 void bubbles()
@@ -22,14 +21,17 @@ void bubbles()
 	ellipse(mouseX,mouseY,wSize,wSize);
 }
 
-/*void wallpaper(){
-	ellipse(20,20,);
-}*/
-/*void notSoCoolCircle()
-{
-	noFill();
-	stroke(255,25,35);
-	int wCircle = (int) ((Math.random()*50)+10);
-	ellipse(400,250,wCircle,200);
+int cSize = 20;
 
-}*/
+void wallpaper(){
+	stroke(0,0,0);
+	noFill();
+	ellipse(400,250,cSize,cSize);
+	cSize = cSize + 5;
+
+	if(cSize==950)
+	{
+		cSize = 20;
+		background(125, 221, 245);
+	}
+}
