@@ -49,7 +49,6 @@ public void wallpaper(){
 	if(cSize==950)
 	{
 		cSize = 20;
-		background(125, 221, 245);
 	}
 }
   static public void main(String[] passedArgs) {

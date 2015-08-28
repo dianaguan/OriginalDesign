@@ -33,6 +33,5 @@ void wallpaper(){
 	if(cSize==950)
 	{
 		cSize = 20;
-		background(125, 221, 245);
 	}
 }
